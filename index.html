@@ -22,13 +22,13 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/basics.css" />
-    <link rel="stylesheet" href="css/animation.css" />
+    <!-- <link rel="stylesheet" href="css/animation.css" /> -->
   </head>
-  <body>
+  <body class="overflow-hidden">
     <!-- Start of hero section -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4">
         <div class="container overflow-hidden">
           <a
             class="navbar-brand text-uppercase navbar-logo text-uppercase"
@@ -54,24 +54,33 @@
           >
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li
-                class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0 text-center my-md-1 my-sm-1"
+                class="nav-item active pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0 text-center my-md-1 my-sm-1"
               >
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#home">
+                  <i class="fas fas fa-home pr-1"></i> Home</a
+                >
               </li>
               <li
                 class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0 text-center my-md-1 my-sm-1"
               >
-                <a class="nav-link" href="#services">about/skills</a>
+                <a class="nav-link" href="#about">
+                  <i class="fas fas far fa-user-circle pr-1"></i>
+                  about/skills</a
+                >
               </li>
               <li
                 class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0 text-center my-md-1 my-sm-1"
               >
-                <a class="nav-link" href="#area">projects</a>
+                <a class="nav-link" href="#projects">
+                  <i class="fas fas fas fa-pen-nib pr-1"></i> projects</a
+                >
               </li>
               <li
                 class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0 text-center my-md-1 my-sm-1"
               >
-                <a class="nav-link" href="#contact">contact</a>
+                <a class="nav-link" href="#contact">
+                  <i class="fas fas fas fa-phone-alt pr-1"></i> contact</a
+                >
               </li>
             </ul>
           </div>
@@ -237,8 +246,85 @@
       </div>
     </div>
     <!-- End of hero -->
+
+    <!-- About section -->
+    <section class="about overflow-hidden my-10" id="about">
+      <div class="container-fluid overflow-hidden">
+        <div class="about-me">
+          <svg
+            class="overflow-hidden"
+            width="580"
+            height="465"
+            viewBox="0 0 580 465"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.12441 197.607C38.3264 -0.643036 450.798 -75.497 572.644 94.0713C642.452 191.221 642.452 291.523 572.644 388.674C444.995 566.318 -35.8018 405.3 2.12441 197.607Z"
+              fill="#ffbf51"
+            />
+          </svg>
+          <div class="a-content p-5 w-75">
+            <h2 class="text-capitalize font-weight-bold pl-5">About me</h2>
+            <p class="lead py-3 pl-5">
+              Hey There I'm Fatima, a Frontend Developer, I'm hoping to take my
+              web developing skills to new levels and Seek Opportunities. in my
+              work I rely on "Keep It Simple"principle so I could do a creative
+              designs that reflects my own personality.
+            </p>
+          </div>
+        </div>
+        <div class="my-skills overflow-hidden">
+          <svg
+            class="s1 overflow-hidden"
+            width="580"
+            height="465"
+            viewBox="0 0 580 465"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.12441 197.607C38.3264 -0.643036 450.798 -75.497 572.644 94.0713C642.452 191.221 642.452 291.523 572.644 388.674C444.995 566.318 -35.8018 405.3 2.12441 197.607Z"
+              fill="url(#grad1)"
+            />
+          </svg>
+          <svg
+            class="s2"
+            width="609"
+            height="465"
+            viewBox="0 0 609 465"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 238.5C39.202 40.2497 479.798 -90.497 601.644 79.0714C671.452 176.222 671.452 276.523 601.644 373.674C473.995 551.318 -34.9262 446.193 3 238.5Z"
+              fill="#FFBF51"
+            />
+          </svg>
+          <svg
+            class="s3"
+            width="607"
+            height="477"
+            viewBox="0 0 607 477"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.49999 307C38.702 108.75 477.798 -108.497 599.644 61.0713C669.452 158.221 669.452 258.523 599.644 355.674C471.995 533.318 -35.4263 514.693 2.49999 307Z"
+              fill="#C5ABDE"
+            />
+          </svg>
+          <div id="tag-cloud"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About section -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/jquery.svg3dtagcloud.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/tagCloud.js"></script>
   </body>
 </html>

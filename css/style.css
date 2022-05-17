@@ -6,13 +6,36 @@
 /* Navbar and hero section */
 /**********************************/
 
+.nav-item {
+  margin-right: 0.3rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.nav-item:hover,
+.nav-item.active {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(100px);
+  border: 4px solid transparent;
+}
 .nav-link {
   color: #fff !important;
   text-transform: capitalize;
 }
 .navbar-brand {
   font-weight: 700 !important;
-  color: var(--purple) !important;
+  background: linear-gradient(#471377,#c5abde);
+  -webkit-background-clip: text;
+  color: transparent !important;
+  text-transform: capitalize !important;
 }
 .svg-container {
   width: 30%;
@@ -42,7 +65,7 @@
     -moz-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
     -o-transform: rotate(-360deg);
-}
+  }
 }
 
 .photo-container {
@@ -134,4 +157,73 @@
   position: absolute;
   top: -14%;
   left: 10%;
+}
+
+/* About and my skills */
+/**********************************/
+.about > .container-fluid {
+  display: flex;
+  padding: 0 !important;
+}
+.about-me{
+  width: 50%;
+  position: relative;
+}
+.about-me > svg  {
+  position: absolute;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  z-index: -1;
+  width: 20%;
+  top: -20%;
+}
+.a-content{
+  z-index: 10;
+  backdrop-filter: blur(50px);
+  border: 4px solid transparent;
+}
+.my-skills {
+  width: 50%;
+  position: relative;
+}
+.my-skills > svg {
+  position: absolute;
+  right: 0%;
+  top: 0;
+}
+.s1{
+  z-index: -1;
+}
+.s2{
+z-index: -2;
+}
+.s3{
+  z-index: -3;
+}
+.lines{
+  position: absolute !important;
+  top: -0% !important;
+  left: 1%;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#tag-cloud{
+  position: absolute;
+  right: 0%;
+}
+
+.about h2 {
+  font-size: 35px;
+  background: linear-gradient(#471377,#c5abde);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.lead{
+  font-weight: 500;
 }

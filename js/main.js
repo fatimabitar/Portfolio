@@ -2,7 +2,7 @@
 let path1 = document.querySelector(".path-1");
 let path2 = document.querySelector(".path-2");
 animate = () => {
-  const start = " 0 0 0 0";
+  const start = "0 0 0 0";
   const end1 =
     "M478.5 872C364 736.5 0 -8.5 0 -8.5H1286.5V578.5C1286.5 578.5 593 1007.5 478.5 872ZF";
   const end2 =
@@ -34,7 +34,7 @@ tl.from(".navbar", 1, {
   })
   .from(".girl", 1, {
     x: -350,
-  })
+  },"<")
   .from(".react", 1, {
     y: 50,
     opacity: 0,
@@ -63,6 +63,5 @@ anime
     easing: "easeOutExpo",
     delay: 1000,
   });
-
 
   

@@ -10,6 +10,9 @@ body::-webkit-scrollbar {
 }
 body {
   font-family: "Raleway", sans-serif;
-  background: rgba(230, 225, 240, 1);
+  background: rgba(230, 225, 230, 0.8);
   line-height: 1.5;
+}
+.my-10{
+  margin: 150px 0;
 }
